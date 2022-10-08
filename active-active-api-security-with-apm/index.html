@@ -1,0 +1,21 @@
+<html>
+<head>
+
+</head>
+<body>
+
+<h1>
+    Active-Active API Security with BIG-IP APM
+</h1>
+<p>
+    A customer bought several pairs of F5 LTM + APM + AWAF to be deployed API Security solution. The customer asked how to configure the solution to be active-active. This means that both F5 instances in a pair have to actively process the incoming traffic. 
+</p>
+<p>
+    The default Active-Standby setup in F5 has 1 traffic group for floating objects (traffic-group-1) and 1 traffic group for non-floating objects (traffic-group-local-only). The floating traffic group, e.g. traffic-group-1, is usually active in the first F5 device and standy in the second F5 device, hence Active-Standby. The Active-Active setup in F5 requires minimum 1 additional floating traffic group which it is active on the second F5 device and standby in the first F5 device.
+</p>
+<p>
+    <img src="Picture1.png" alt="Active Standby Architecture">
+</p>
+
+</body>
+</html>
